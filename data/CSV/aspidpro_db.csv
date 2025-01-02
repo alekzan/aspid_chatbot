@@ -1,0 +1,181 @@
+CLAVE,NOMBRE DEL PRODUCTO,TIPO DE PIEL,PRESENTACIÓN,PRECIO,DESCRIPCIÓN,CATEGORÍA
+SER01,R SÉRUM,Todo tipo de piel,45 mL,$699,Reincronizador facial • Ayuda a minimizar los signos de fatiga y estrés oxidativo en la piel formulado con ectoína y AHA,Sérum
+SER02,M SÉRUM,Todo tipo de piel,45 mL,$699,Microbioma facial • Formulado con probióticos que ayudan a fortalecer la piel con acción calmante e hidratante,Sérum
+SER03,L SÉRUM,Todo tipo de piel,45 mL,$699,Protector luz azul suero único que previene los daños generados por la exposición a rayos UV y contaminación digital,Sérum
+SER04,K MASK,Todo tipo de piel,25 g / 30 g,$689,Mascarilla de descanso para contorno de ojos,Sérum
+SER05,O OIL,Protocolos específicos,27 mL,$499,Mezcla de aceites esenciales,Sérum
+SER06,C SÉRUM,Todo tipo de piel,45 mL,$699,"Suero con retinol que ayuda a minimizar las pigmentaciones, signos de la edad y promueve la regeneración celular de la piel",Sérum
+SER07,B SÉRUM,Todo tipo de piel,45 mL,$699,"Suero con collagen system, elastina y ácido fólico que contrarresta los efectos de la gravedad de la piel",Sérum
+SER08,H SÉRUM,Todo tipo de piel,45 mL,$699,Sérum hidratante con ácido hialurónico. Booster con GAG,Sérum
+SER09,D+ SÉRUM,Todo tipo de piel,45 mL,$699,"Suero despigmentante, antioxidante y seborregulador",Sérum
+AA001,VITA JOUR öL,Piel normal y Piel mixta y Piel grasa,110 g,$499,"Crema de limpieza para piel normal, grasa o mixta",Desmaquillantes
+AA002,VITA JOUR öL,Piel normal y Piel mixta y Piel grasa,220 g,$659,"Crema de limpieza para piel normal, grasa o mixta",Desmaquillantes
+AA003,VITA JOUR LÍQUIDA,Piel seca / Alípica y Piel sensible,240 mL,$559,Crema limpiadora para piel alípica o sensible,Desmaquillantes
+AA004,VITA JOUR LÍQUIDA,Piel seca / Alípica y Piel sensible,500 mL,$819,Crema limpiadora para piel alípica o sensible,Desmaquillantes
+AA005,ESFUMINA,Todo tipo de piel,16 g,$309,Gel desmaquillante de ojos y labios,Desmaquillantes
+AB001,YOEN REFRESCANTE y ASTRINGENTE,Piel grasa,120 mL,$449,Loción para piel mixta o grasa,Lociones y tónicos
+AB002,YOEN REFRESCANTE y ASTRINGENTE,Piel grasa,500 mL,$719,Loción para piel mixta o grasa,Lociones y tónicos
+AB003,YOEN HIDROTONIC,Piel normal y Piel seca / Alípica y Piel sensible,240 mL,$559,"Loción humectante sin alcohol para piel normal, alípica o sensible",Lociones y tónicos
+AB004,YOEN HIDROTONIC,Piel normal y Piel seca / Alípica y Piel sensible,500 mL,$849,"Loción humectante sin alcohol para piel normal, alípica o sensible",Lociones y tónicos
+AB006,YOEN HIDROTONIC,Piel normal y Piel seca / Alípica y Piel sensible,120 mL,$379,"Loción humectante sin alcohol para piel normal, alípica o sensible",Lociones y tónicos
+AB005,Tefnet F.P.,Todo tipo de piel,120 mL,$429,Ideal para la activación de productos,Lociones y tónicos
+AC001,GENESIS I,Piel normal y Piel mixta y Piel grasa,50 g,$779,Crema humectante de día para piel normal o grasa,Cremas de tratamiento
+AC002,GENESIS I,Piel normal y Piel mixta y Piel grasa,220 g,"$1,109",Crema humectante de día para piel normal o grasa,Cremas de tratamiento
+AC003,GENESIS II,Piel normal y Piel seca / Alípica,50 g,$779,Crema humectante de día para piel normal a alípica,Cremas de tratamiento
+AC004,GENESIS II,Piel normal y Piel seca / Alípica,220 g,"$1,109",Crema humectante de día para piel normal a alípica,Cremas de tratamiento
+AC005,HUIT,Piel sensible,18 g,$279,Crema desensibilizante para piel cuperosa o sensible,Cremas de tratamiento
+AC006,MIXESSENCE,Todo tipo de piel,30 mL,$739,Gel contorno de ojos,Cremas de tratamiento
+AC007,MIXESSENCE,Todo tipo de piel,60 mL,$909,Gel contorno de ojos,Cremas de tratamiento
+AC015,MIXESSENCE,Todo tipo de piel,18 mL,$399,Gel contorno de ojos,Cremas de tratamiento
+AC008,SHAMBALA,Todo tipo de piel,120 g,$659,Crema líquida humectante con provitaminas A y E,Cremas de tratamiento
+AC009,SHAMBALA,Todo tipo de piel,240 g,$959,Crema líquida humectante con provitaminas A y E,Cremas de tratamiento
+AC010,BI EFFECT,Todo tipo de piel,60 g,$509,Gel hidratante,Cremas de tratamiento
+AC011,BI EFFECT,Todo tipo de piel,120 g,$749,Gel hidratante,Cremas de tratamiento
+AC012,INTELLIGENT GLYCOLIC,Todo tipo de piel,30 mL,$619,Gel reacondicionador para personalizar el tratamiento cosmético,Cremas de tratamiento
+AC013,SENSITIVE SKIN,Piel normal y Piel sensible,60 mL,$599,Emulsión antioxidante,Cremas de tratamiento
+AC014,YANKA C,Todo tipo de piel,30 g,$719,Crema despigmentante,Cremas de tratamiento
+AD001,TIFERETH,Todo tipo de piel,50 g,$719,Crema de noche con provitaminas A y E,Cremas nutritivas
+AD002,TIFERETH,Todo tipo de piel,220 g,"$1,129",Crema de noche con provitaminas A y E,Cremas nutritivas
+AD003,ASPASIA,Piel seca / Alípica,50 g,$869,Crema tensora y humectante para piel madura o flácida,Cremas nutritivas
+AD004,ASPASIA,Piel seca / Alípica,220 g,"$1,129",Crema tensora y humectante para piel madura o flácida,Cremas nutritivas
+AD005,BI EFFECT PIEL GRASA,Piel mixta y Piel grasa,60 g,$679,Gel regulador multifuncional,Cremas nutritivas
+AE002,CLARYFIRM,Todo tipo de piel,60 mL,$719,Mascarilla aclaradora y reafirmante,Mascarillas
+AE003,CLARYFIRM,Todo tipo de piel,240 mL,"$1,399",Mascarilla aclaradora y reafirmante,Mascarillas
+AE005,ABRADERMIN PEELING,Todo tipo de piel,175 g,$769,Exfoliante facial,Mascarillas
+AE006,MOLDELINA,Todo tipo de piel,set para 6 aplicaciones,"$1,099",Gel y mascarilla reafirmante y revitalizante,Mascarillas
+AE007,GOMA DE MONDAGE,Todo tipo de piel,240 mL,$719,Mascarilla humectante y oclusiva peel-off,Mascarillas
+AE011,CLEAR TOUCH,Todo tipo de piel,25 mL,$709,Gel despigmentante concentrado,Mascarillas
+AG003,MUDUBINA,Todo tipo de piel,220 g,"$1,029",Crema reafirmante para el contorno de busto y cuello,Línea corporal
+AG004,ASPIDCEL CREMA,Todo tipo de piel,220 g,$629,Crema de apoyo en masaje modelante,Línea corporal
+AG006,ASPIDCEL LOCIÓN,Todo tipo de piel,240 mL,$629,Loción astringente y reafirmante corporal,Línea corporal
+AG008,ASPIDCEL SALES,Todo tipo de piel,600 g,$879,Especial para vendas en aplicación modelante,Línea corporal
+AG010,ASPIDCEL GEL,Todo tipo de piel,240 mL,$929,Gel de apoyo en el tratamiento cosmético corporal,Línea corporal
+AH001,IONO AMP-ATP,Todo tipo de piel,5 ampolletas (2ml c/u),$429,Solución ionizable para piel con pigmentaciones,Microenergéticos (Ampolletas)
+AH002,IONO ELASTINA,Todo tipo de piel,5 ampolletas (2ml c/u),$429,Solución ionizable para piel flácida,Microenergéticos (Ampolletas)
+AH003,IONO PLACENTA,Todo tipo de piel,5 ampolletas (2ml c/u),$429,Solución ionizable nutriente,Microenergéticos (Ampolletas)
+AH004,IONO RNA,Todo tipo de piel,5 ampolletas (2ml c/u),$429,Solución ionizable hidratante,Microenergéticos (Ampolletas)
+AH005,IONO ASP-ARG,Todo tipo de piel,5 ampolletas (2ml c/u),$429,Solución ionizable reafirmante,Microenergéticos (Ampolletas)
+AH006,IONO COLÁGENO TENSOR,Todo tipo de piel,5 ampolletas (2ml c/u),$429,Solución ionizable humectante y nutriente,Microenergéticos (Ampolletas)
+AH007,IONO VITAL DEFENSE ACE,Todo tipo de piel,5 ampolletas (2ml c/u),$479,Solución ionizable antioxidante,Microenergéticos (Ampolletas)
+AH008,SPLENDOR RECOVERY SYSTEM,Todo tipo de piel,15 ampolletas (2ml c/u),$899,Peeling cosmético con ácidos frutales (AHA),Microenergéticos (Ampolletas)
+AH009,COENZIMA Q10 HUMECTANTE,Todo tipo de piel,16 g,$579,Efecto humectante y nutriente,Microenergéticos (Ampolletas)
+AH010,OLIGO SILICIO-MANGANESO,Todo tipo de piel,16 g,$589,Gel de tratamiento cosmético para líneas de expresión,Microenergéticos (Ampolletas)
+AI001,ZANAHORIA,Todo tipo de piel,240 g,$529,Crema líquida humectante para manos y cuerpo con jugo de zanahoria,Línea solar
+AJ002,VITACILS,Todo tipo de piel,10 g,$479,Gel nutritivo fortalecedor de pestañas y cejas,Línea solar
+AI004,PORCELAINE BLANCA,Todo tipo de piel,60 g,$549,Crema humectante con protector solar UVA/UVB FPS 30,Línea solar
+AI005,PORCELAINE BLANCA,Todo tipo de piel,240 g,"$1,149",Crema humectante con protector solar UVA/UVB FPS 30,Línea solar
+AI015,PORCELAINE BLANCA,Todo tipo de piel,45 g,$459,Crema humectante con protector solar UVA/UVB FPS 30,Línea solar
+AI006,PORCELAINE LOTO,Todo tipo de piel,60 g,$559,Crema humectante con protector solar UVA/UVB FPS 30,Línea solar
+AI008,PORCELAINE TOPACIO,Todo tipo de piel,60 g,$559,Crema humectante con protector solar UVA/UVB FPS 30,Línea solar
+AI009,PORCELAINE PIEL GRASA,Piel mixta y Piel grasa,60 g,$579,Crema humectante con protector solar UVA/UVB FPS 30 para piel normal a grasa,Línea solar
+AI016,PORCELAINE PIEL GRASA,Piel mixta y Piel grasa,45 g,$459,Crema humectante con protector solar UVA/UVB FPS 30 para piel normal a grasa,Línea solar
+AI014,PORCELAINE ULTRA 100,Todo tipo de piel,120 g,"$1,039",Crema protectora solar resistente al agua y al sudor FPS 50+,Línea solar
+AI017,PORCELAINE ULTRA 100,Todo tipo de piel,45 g,$459,Crema protectora solar resistente al agua y al sudor FPS 50+,Línea solar
+AI018,PORCELAINE 360º,Todo tipo de piel,45 g,$499,"FPS 50+, blue defense, microbiota y osmoprotección",Línea solar
+AI019,PORCELAINE LUXURY,Todo tipo de piel,45 g,$499,"FPS 50+, antioxidante, antiinflammaging y antipolución",Línea solar
+AI020,PORCELAINE SPLASH,Todo tipo de piel,120 mL,$499,"FPS 30, mineral complex, antipolución y efecto detox",Línea solar
+FF120,SINERGIA DE ACEITES ESENCIALES NARANJA,Protocolos específicos,10 mL,$419,,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF122,SINERGIA DE ACEITES ESENCIALES CAFÉ,Protocolos específicos,10 mL,$419,,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF124,SINERGIA DE ACEITES ESENCIALES GRIS,Protocolos específicos,10 mL,$419,,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF125,SINERGIA DE ACEITES ESENCIALES GRIS,Protocolos específicos,58 mL,"$1,169",,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF126,SINERGIA DE ACEITES ESENCIALES BLANCO,Protocolos específicos,10 mL,$419,,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF127,SINERGIA DE ACEITES ESENCIALES BLANCO,Protocolos específicos,58 mL,"$1,419",,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF128,SINERGIA DE ACEITES ESENCIALES VINO,Protocolos específicos,10 mL,$419,,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF130,SINERGIA DE ACEITES ESENCIALES VERDE,Protocolos específicos,10 mL,$419,,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF134,SINERGIA DE ACEITES ESENCIALES MALVA,Protocolos específicos,10 mL,$419,,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF138,SINERGIA DE ACEITES ESENCIALES AMARILLO,Protocolos específicos,10 mL,$419,,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF140,SINERGIA DE ACEITES ESENCIALES AZUL,Protocolos específicos,10 mL,$419,,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF145,BODY & SOUL AROMACOLOGY RELAX (AZUL PROFUNDO),Protocolos específicos,120 mL,$599,,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF146,BODY & SOUL AROMACOLOGY EQUAL (VINO ARMONÍA),Protocolos específicos,120 mL,$499,,ASPIDESSENCE (Sinergias / Aceites esenciales)
+FF148,ELIXIR DE ACEITES PARA CUIDADO FACIAL,Todo tipo de piel,56 mL,$539,,ASPIDESSENCE (Sinergias / Aceites esenciales)
+SS001,GEL EXFOLIANTE,Todo tipo de piel,500 mL,$999,"Humectante, no requiere enjuague",SPASCIENCE
+SS004,TALCO LÍQUIDO,Todo tipo de piel,120 mL,$519,"Desodorante, ideal para depilar y aclarar la piel",SPASCIENCE
+SS005,ARCILLA Y FANGO MARINO,Todo tipo de piel,300 g,"$1,009",Mascarilla facial y corporal con oligoelementos,SPASCIENCE
+SS008,ACEITE PARA MASAJE ORIENTAL SENSE,Todo tipo de piel,1 L,$849,"Con aroma a lavanda, ylang ylang y cardamomo",SPASCIENCE
+SS010,ACEITE PARA MASAJE CITRUS ENERGY,Todo tipo de piel,1 L,$849,"Con aroma a orquídea, naranja y mandarina",SPASCIENCE
+MM001,GEL DERMOLIMPIADOR,Todo tipo de piel,75 g,$359,"Gel espumoso, ideal para piel masculina y afeitado",MET MEN
+MM003,CREMA ANTIOXIDANTE Y PROTECTORA,Todo tipo de piel,60 mL,$439,Humectante y antioxidante con pantalla y filtro solar,MET MEN
+MM006,CREMA ALISANTE,Todo tipo de piel,30 mL,$469,Minimiza la apariencia de las líneas de expresión,MET MEN
+MM007,LOCIÓN CAPILAR,Todo tipo de piel,120 mL,$479,Tónico para el cabello,MET MEN
+JA007,GEL DE LIMPIEZA FACIAL,Todo tipo de piel,120 mL,$489,Con alfahidroxiácidos (AHA) para limpieza y retexturización de la piel,JÜNG
+JA008,GEL DE LIMPIEZA FACIAL,Todo tipo de piel,60 g,$289,Con alfahidroxiácidos (AHA) para limpieza y retexturización de la piel,JÜNG
+JB027,GEL ASTRINGENTE,Piel grasa,18 g,$339,"Para piel grasa y con imperfecciones, contiene aminoácidos azulfrados",JÜNG
+JB028,GEL ASTRINGENTE,Piel grasa,75 g,$729,"Para piel grasa y con imperfecciones, contiene aminoácidos azulfrados",JÜNG
+JB031,LOCIÓN EQUILIBRANTE,Piel grasa,60 mL,$309,"Para piel grasa y con imperfecciones, contiene romero y pepino",JÜNG
+JB032,LOCIÓN EQUILIBRANTE,Piel grasa,240 mL,$749,"Para piel grasa y con imperfecciones, contiene romero y pepino",JÜNG
+JC048,CREMA PRO CONTROL GRASO,Piel grasa,60 mL,$659,"Para piel grasa y con imperfecciones, con agave y jugo de pepino",JÜNG
+JC049,CREMA PRO CONTROL GRASO,Piel grasa,240 mL,"$1,179","Para piel grasa y con imperfecciones, con agave y jugo de pepino",JÜNG
+JE092,MASCARILLA OPACIFICADORA,Piel grasa,75 g,$539,Mascarilla matificante para piel grasa y con imperfecciones,JÜNG
+JE093,MASCARILLA OPACIFICADORA,Piel grasa,220 g,$839,Mascarilla matificante para piel grasa y con imperfecciones,JÜNG
+EC064,REPACEL DUAL,Todo tipo de piel,30 g / 30 g,"$1,039",Tratamiento cosmético restaurador para uso de día y noche,SELECTIVE (Cremas de tratamiento y nutritivas)
+EC073,ULTRA LISS,Todo tipo de piel,30 g / 60 mL,"$1,039",Crema miotonificante y spray redensificador,SELECTIVE (Cremas de tratamiento y nutritivas)
+RG005,REVIF OXIGEN,Todo tipo de piel,30 g,$829,Crema líquida fortificante con nanobioestimulinas,RGENERATION (NBE)
+RG007,REVIF RADIANCE,Todo tipo de piel,30 g,$869,Crema líquida alisante con nanobioestimulinas,RGENERATION (NBE)
+RG011,SOY ATRACTIVE,Todo tipo de piel,220 g,"$1,179",Crema con isoflavonas de soya,RGENERATION (NBE)
+RG017,SOY ATRACTIVE,Todo tipo de piel,120 g,$839,Crema con isoflavonas de soya,RGENERATION (NBE)
+RG014,VID ESSENCE,Todo tipo de piel,220 g,"$1,139",Crema antioxidante de soya,RGENERATION (NBE)
+RG018,VID ESSENCE,Todo tipo de piel,120 g,$789,Crema antioxidante de soya,RGENERATION (NBE)
+EA004,ETERNUM ANTISIGNOS PREVENT 30+ EMULSIÓN,Todo tipo de piel,30 mL,$679,Emulsión humectante hidratante,ETERNUM
+EA005,ETERNUM ANTISIGNOS COMPENSE 45+ EMULSIÓN,Todo tipo de piel,30 mL,$689,Emulsión compensadora y nutritiva,ETERNUM
+EA006,ETERNUM ANTISIGNOS REPAIR 60+ EMULSIÓN,Todo tipo de piel,30 mL,$709,Emulsión restauradora de día,ETERNUM
+ORG01,SHAMPOO DERMOLIMPIADOR HIERBABUENA,Todo tipo de piel,120 mL,$499,Efecto purificante y refrescante,AP ORGANIKA
+ORG02,MICRODERMOABRASIÓN DE BAMBÚ Y LIMONCELLO,Todo tipo de piel,130 g,$719,Polvo exfoliante y retexturizante,AP ORGANIKA
+ORG04,MASCARILLA UNIVERSAL DE ALGAS,Todo tipo de piel,500 g,$999,Humectante para alta penetración de activos,AP ORGANIKA
+ORG11,ACEITE PARA MASAJE CON CACAO Y VAINILLA,Todo tipo de piel,500 mL,$499,Proporciona bienestar físico y emocional,AP ORGANIKA CORPO
+ORG12,RITUAL CONTOUR PLACER CON CACAO Y MENTA,Protocolos específicos,set para 6 aplicaciones,"$1,199",Mascarilla reafirmante para tratamiento cosmético corporal,AP ORGANIKA CORPO
+ORG14,CREMA CORPORAL CON JAMAICA Y CASTAÑO DE INDIAS,Todo tipo de piel,240 g,$399,Recomendado para piernas cansadas,AP ORGANIKA CORPO
+ORG15,"VELO DE SEDA CON ALMENDRAS DULCES, SEMILLA DE UVA Y ARGÁN",Todo tipo de piel,500 mL,$539,Fórmula en gel que ayuda a mantener la humedad en la piel,AP ORGANIKA CORPO
+ORG16,GEL CONDUCTOR OCEANIC,Todo tipo de piel,1 Kg,$269,"Para uso con aparatología, aplicación facial y corporal",AP ORGANIKA CORPO
+ORG17,GEL CONDUCTOR OCEANIC,Todo tipo de piel,4 Kg,$819,"Para uso con aparatología, aplicación facial y corporal",AP ORGANIKA CORPO
+NVI01,DEMAQUILLANT,Todo tipo de piel,55 g,$429,Desmaquillante de ojos con semilla de uva y caléndula,NVi
+NVI03,LA CREME BIO MIMETIC,Todo tipo de piel,50 g,$719,Crema antisignos de la edad mimetizante con extracto de estrella de mar y péptidos,NVi
+NVI05,DERMA LISSANT,Todo tipo de piel,220 g,$759,Crema alisante corporal con extracto de té negro y raíz de mangle,NVi
+NVI06,BODY OPTIMALE,Todo tipo de piel,220 g,$769,"Crema corporal reafirmante con café, mentol y eucalipto",NVi
+NVI18,TRIDIMENSIONNEL SHAMPOO,Todo tipo de piel,500 mL,$669,"Shampoo multifuncional para cara, cuerpo y cabello",NVi
+NVI08,EQUILIBRANT,Todo tipo de piel,50 g,$499,Emulsión capilar equilibrante con extractos herbales,NVi
+NVI09,HIDRAMASC,Todo tipo de piel,220 g,$559,"Crema humectante para tratamiento capilar con y sin enjuague, con napahuite, aceite de argán y arginina",NVi
+NVI10,BB CREAM FPS 30,Todo tipo de piel,75 g,$619,"Crema hidratante con filtro solar con nanopartículas, ácido hialurónico y lisina",NVi
+NVI11,CREME TENSO-NUTRITIVE,Todo tipo de piel,18 g,$579,"Crema para ojos y labios con efecto tensor, contiene oligopéptidos de okra",NVi LUXURIA
+NVI12,DESENSIBILISANT,Piel sensible,50 g,$579,Emulsión desensibilizante con caléndula y moringa,NVi LUXURIA
+NVI13,SERUM REPARER INTEGREL,Todo tipo de piel,60 g,$869,"Suero nutritivo energizante con RNA sódico, biominas y revitalin",NVi LUXURIA
+NVI19,REAFIRMANT DU CORPS,Todo tipo de piel,500 mL,$649,Gel reafirmante multipropósito para cuerpo con alcanfor y extracto de algas,NVi LUXURIA
+EM001,FINESSE,Todo tipo de piel,500 mL,$559,Agua micelar,emotions
+EM003,LUMINOUS MASK,Todo tipo de piel,120 g,$739,Mascarilla aclarante con provitamina E,emotions
+EM006,DETOX GEL,Todo tipo de piel,220 g,$809,Gel corporal con extracto de alcachofa,emotions
+EM007,DEPILSENSE,Todo tipo de piel,120 g,$659,Gel inhibidor del crecimiento del vello,emotions
+EM008,CREMA CORPORAL HUMECTANTE,Piel seca / Alípica y Piel sensible,220 g,$529,Con extracto de moringa y jojoba,emotions
+EM009,DESINCRUSTANT,Piel grasa,50 g,$559,Crema desincrustante con aceite de borraja y subsalicilato de bismuto,emotions colors
+EM014,RESTORING GEL,Todo tipo de piel,220 g,$449,Gel concentrado con árnica y vitamina K,emotions colors
+EM011,PURIFY MASK,Todo tipo de piel,120 g,$729,Mascarilla purificante con carbón activado y extracto de trébol rojo,emotions colors
+EM012,ANTI-POLLUTION SPRAY,Todo tipo de piel,120 mL,$389,Loción antipolución con fitonutrientes y soya,emotions colors
+FN001,OVALO DEFINITION,Todo tipo de piel,60 g,$699,Crema reafirmante del óvalo facial con jalea real y ácido hialurónico,FÉNIX
+FN003,MATT PRO,Todo tipo de piel,30 g,$479,Perfeccionador 5 en 1 con ácido hialurónico,FÉNIX
+FN004,O2 MASK,Todo tipo de piel,50 g,$359,Mascarilla revitalizante con tecnología O2,FÉNIX
+FN005,AH 50/50,Todo tipo de piel,5 ampolletas (2ml c/u),$579,Ampolleta con ácido hialurónico de alto y bajo peso molecular,FÉNIX
+FN007,PEEL-Q,Todo tipo de piel,60 g,$699,Mascarilla efecto peeling químico,INDÓMITO - FÉNIX • By ASPIDPRO
+FN009,FITNESS BODY ROLL,Todo tipo de piel,90 g,$559,Gel reafirmante corporal con efecto shock,INDÓMITO - FÉNIX • By ASPIDPRO
+FN013,R-NEUF,Todo tipo de piel,5 ampolletas (2ml c/u),$499,Solución concentrada vitaminada con ácido fólico,INDÓMITO - FÉNIX • By ASPIDPRO
+FN014,W&A,Todo tipo de piel,5 ampolletas (2ml c/u),$479,Solución concentrada de vitamina C con ácido hialurónico,INDÓMITO - FÉNIX • By ASPIDPRO
+SEN01,LOCIÓN HIDRATANTE PIEL SENSIBLE,Todo tipo de piel,120 mL,$499,Loción hidratante con provitaminas B5 y centella asiática,SENSE
+SEN02,SHAMPOO DERMOLIMPIADOR PIEL SENSIBLE,Todo tipo de piel,120 mL,$519,Shampoo dermolimpiador con centella asiática y caléndula,SENSE
+SEN03,MASCARILLA REEQUILIBRANTE PIEL SENSIBLE,Todo tipo de piel,50 g,$579,Mascarilla reequilibrante con probióticos y centella asiática,SENSE
+SEN06,MASCARILLA TENSOTONIFICANTE,Todo tipo de piel,10 aplicaciones (30 g c/u),"$1,019",Mascarilla tensotonificante dual (facial y corporal),SENSE
+SEN04,SUPREME CLEANSING,Todo tipo de piel,50 g,$559,Bálsamo limpiador facial efecto dual que facilita el arrastre de impurezas,SENSE
+HEN01,TSUKI,Todo tipo de piel,5 ampolletas (2ml c/u),$499,Ampolleta PHA Glow shot. Exfoliación química de última generación con potencial seborregulador y tolerancia cutánea,Henko
+HEN02,MITE,Todo tipo de piel,15 g,$449,"Contorno de ojos. Con triple acción: despigmentante, antioxidante y efecto botox-like",Henko
+HEN03,MIZU,Todo tipo de piel,15 mL,$99,Mascarilla hidratante Aqua-Biome • Hidratación intensa y osmoprotección,Henko
+HEN04,HOSHI,Todo tipo de piel,15 mL,$99,Mascarilla BHA/PHA • Exfoliación y limpieza,Henko
+HEN05,DARIN,Todo tipo de piel,15 mL,$99,Mascarilla Antioxidante A-OX • Potencial coadyuvante de tratamientos despigmentantes,Henko
+HEN06,SUNA,Todo tipo de piel,500 g,$589,"Body scrub. Exfoliante hidratante corporal con aloe vera, BIO-exfoliantes y AHA",Henko
+KOR01,Mayu,Todo tipo de piel,220 g,$619,Envoltura corporal humectante con aceite de semilla de uva,Koro
+KOR02,V-TENSE MASK,Todo tipo de piel,10 mL / 150 g,$799,Mascarilla facial con efecto push-up,Koro
+KOR04,DETOXY MASK,Todo tipo de piel,50 g,$419,"Mascarilla facial purificante, con AHA y ácido salicílico",Koro
+KOR05,DAILY CREAM,Todo tipo de piel,200 g,$169,"Crema corporal humectante, reparación intensiva",Koro
+DV001,Bakuchiol Tense,Todo tipo de piel,75 g,$549,Mascarilla de arcilla hidro-tensora,DEVOCIÓN
+DV002,Bakuchiol Boost,Todo tipo de piel,45 g,$449,Gel reafirmante facial,DEVOCIÓN
+DV003,Bi Bakuchiol Bifase,Todo tipo de piel,5 ampolletas (2ml c/u),$429,Phyto retinol – Ácido hialurónico X8,DEVOCIÓN
+DV004,AH8 Astaxantina,Todo tipo de piel,50 g,$499,Cremagel antioxidante,DEVOCIÓN
+DV005,Nebbia,Todo tipo de piel,100 g,$349,Loción exfoliante en gel,DEVOCIÓN
+AI021,Porcelaine Mineral,Todo tipo de piel,45 g,$499,Protector solar 100% mineral,PORCELAINE
+AI022,Porcelaine Powder,Todo tipo de piel,8 g,$259,Polvo fotoprotector mineral,PORCELAINE
+AI023,Porcelaine Stick,Piel normal y Piel seca / Alípica,12 g,$259,Fotoprotector invisible en barra,PORCELAINE
