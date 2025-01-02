@@ -4,6 +4,7 @@ RESUMEN/
 
 # Ignore environment and Python cache files
 .env
+.env.production
 __pycache__/
 *.pyc
 *.pyo

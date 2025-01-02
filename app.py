@@ -307,33 +307,34 @@ def webhook():
                                 sender,
                             )
 
-                            # Process the text with call_model
-                            user_key = f"whatsapp_conversation_{telefonoCliente}"
-                            g.config = get_config(user_key)
-                            client_phone = remove_prefix(telefonoCliente)
-                            # response = call_model(content, client_phone, g.config)
-                            response = call_model(content, g.config)
+                            if phone_number_id == "364989433370216":
+                                # Process the text with call_model
+                                user_key = f"whatsapp_conversation_{telefonoCliente}"
+                                g.config = get_config(user_key)
+                                client_phone = remove_prefix(telefonoCliente)
+                                # response = call_model(content, client_phone, g.config)
+                                response = call_model(content, g.config)
 
-                            # Send the response back as a text
-                            send_whatsapp_message(
-                                client_phone, response, message_type="text"
-                            )
+                                # Send the response back as a text
+                                send_whatsapp_message(
+                                    client_phone, response, message_type="text"
+                                )
 
-                            # Save outgoing response
-                            outgoing_message_data = {
-                                "profile_name": "Chatbot",
-                                "type": "text",  # Always "text" for now
-                                "content": response,
-                                "media_id": None,
-                                "mime_type": None,
-                                "sha256": None,
-                            }
-                            save_message_to_db(
-                                phone_number_id,
-                                telefonoCliente,
-                                outgoing_message_data,
-                                "chatbot",
-                            )
+                                # Save outgoing response
+                                outgoing_message_data = {
+                                    "profile_name": "Chatbot",
+                                    "type": "text",  # Always "text" for now
+                                    "content": response,
+                                    "media_id": None,
+                                    "mime_type": None,
+                                    "sha256": None,
+                                }
+                                save_message_to_db(
+                                    phone_number_id,
+                                    telefonoCliente,
+                                    outgoing_message_data,
+                                    "chatbot",
+                                )
         except KeyError as e:
             logger.error(f"Error processing WhatsApp webhook: {e}")
 
