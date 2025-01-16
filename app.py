@@ -63,7 +63,8 @@ app.logger.addHandler(file_handler)
 app.logger.addHandler(console_handler)
 app.logger.setLevel(logging.INFO)
 
-load_dotenv()
+load_dotenv(dotenv_path="/var/www/airregio-llm/.env")
+
 VERSION = os.getenv("VERSION")
 WHATSAPP_TOKEN = os.getenv("WHATSAPP_TOKEN")
 RECIPIENT_WAID = os.getenv("RECIPIENT_WAID")
@@ -142,7 +143,7 @@ def remove_prefix(number):
     return str_number
 
 
-def send_whatsapp_message(recipient, message, message_type="text"):
+def send_whatsapp_message(recipient, message, message_type="text", media_url=None):
     url = f"https://graph.facebook.com/{VERSION}/{PHONE_NUMBER_ID}/messages"
     headers = {
         "Authorization": f"Bearer {WHATSAPP_TOKEN}",
@@ -164,8 +165,21 @@ def send_whatsapp_message(recipient, message, message_type="text"):
             "type": "interactive",
             "interactive": message,
         }
+    elif message_type == "image":
+        if not media_url:
+            raise ValueError("media_url is required for sending image messages.")
+        data = {
+            "messaging_product": "whatsapp",
+            "recipient_type": "individual",
+            "to": recipient,
+            "type": "image",
+            "image": {
+                "link": media_url,
+                "caption": message or "",
+            },
+        }
     else:
-        raise ValueError("Invalid message type. Use 'text' or 'interactive'.")
+        raise ValueError("Invalid message type. Use 'text', 'interactive', or 'image'.")
 
     response = requests.post(url, headers=headers, json=data)
     if response.status_code != 200:
@@ -307,19 +321,28 @@ def webhook():
                                 sender,
                             )
 
-                            if phone_number_id == "364989433370216":
+                            if phone_number_id == PHONE_NUMBER_ID:
                                 # Process the text with call_model
                                 user_key = f"whatsapp_conversation_{telefonoCliente}"
                                 g.config = get_config(user_key)
                                 client_phone = remove_prefix(telefonoCliente)
                                 # response = call_model(content, client_phone, g.config)
-                                response = call_model(content, g.config)
-
-                                # Send the response back as a text
-                                send_whatsapp_message(
-                                    client_phone, response, message_type="text"
+                                response, message_type = call_model(
+                                    content, client_phone, g.config
                                 )
 
+                                # Send the response back as a text
+                                if message_type == "text":
+                                    send_whatsapp_message(
+                                        client_phone, response, message_type
+                                    )
+                                elif message_type == "image":
+                                    send_whatsapp_message(
+                                        client_phone,
+                                        response,
+                                        message_type,
+                                        media_url="https://i.ibb.co/cvBV385/assy-aspid.png",
+                                    )
                                 # Save outgoing response
                                 outgoing_message_data = {
                                     "profile_name": "Chatbot",
