@@ -1,0 +1,15 @@
+flask
+requests
+redis
+groq
+python-dotenv
+langgraph
+langgraph-checkpoint
+langgraph-checkpoint-sqlite
+langchain-groq
+pydantic
+langchain-chroma
+langchain-openai
+langchain-core
+langchain-tools
+pysqlite3-binary
