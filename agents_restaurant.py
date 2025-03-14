@@ -38,8 +38,8 @@ llama_3_1 = "llama-3.1-8b-instant"
 llama_3_2 = "llama-3.2-90b-vision-preview"
 llama_3_3 = "llama-3.3-70b-versatile"
 
-# llm = ChatOpenAI(model=gpt, temperature=0.2)
-llm = ChatGroq(model=llama_3_1, temperature=0.2)
+llm = ChatOpenAI(model=gpt, temperature=0.2)
+# llm = ChatGroq(model=llama_3_1, temperature=0.2)
 pinecone_api_key = os.environ.get("PINECONE_API_KEY")
 pc = Pinecone(api_key=pinecone_api_key)
 index = pc.Index("chatbot-restaurante")
