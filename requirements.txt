@@ -13,3 +13,8 @@ langchain-openai
 langchain-core
 langchain-tools
 pysqlite3-binary
+pytz
+langchain_pinecone
+pinecone-client
+pinecone
+pyairtable
