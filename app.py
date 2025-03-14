@@ -13,6 +13,9 @@ from logging.handlers import RotatingFileHandler
 # Existing import for your LLM logic
 from chatbot_graph import call_model
 
+# Existing import for your LLM logic
+from restaurant_graph import call_model_restaurant_bot, call_model_from_messenger
+
 # NEW: Import the transcription function
 from utilities_whatsapp import transcribe_audio_from_whatsapp
 
@@ -143,8 +146,10 @@ def remove_prefix(number):
     return str_number
 
 
-def send_whatsapp_message(recipient, message, message_type="text", media_url=None):
-    url = f"https://graph.facebook.com/{VERSION}/{PHONE_NUMBER_ID}/messages"
+def send_whatsapp_message(
+    recipient, message, phone_number_id, message_type="text", media_url=None
+):
+    url = f"https://graph.facebook.com/{VERSION}/{phone_number_id}/messages"
     headers = {
         "Authorization": f"Bearer {WHATSAPP_TOKEN}",
         "Content-Type": "application/json",
@@ -334,15 +339,51 @@ def webhook():
                                 # Send the response back as a text
                                 if message_type == "text":
                                     send_whatsapp_message(
-                                        client_phone, response, message_type
+                                        client_phone,
+                                        response,
+                                        phone_number_id,
+                                        message_type,
                                     )
                                 elif message_type == "image":
                                     send_whatsapp_message(
                                         client_phone,
                                         response,
+                                        phone_number_id,
                                         message_type,
                                         media_url="https://i.ibb.co/cvBV385/assy-aspid.png",
                                     )
+                                # Save outgoing response
+                                outgoing_message_data = {
+                                    "profile_name": "Chatbot",
+                                    "type": "text",  # Always "text" for now
+                                    "content": response,
+                                    "media_id": None,
+                                    "mime_type": None,
+                                    "sha256": None,
+                                }
+                                save_message_to_db(
+                                    phone_number_id,
+                                    telefonoCliente,
+                                    outgoing_message_data,
+                                    "chatbot",
+                                )
+                            elif phone_number_id == "289382677601457":
+                                # Process the text with call_model
+                                user_key = f"whatsapp_conversation_{telefonoCliente}"
+                                g.config = get_config(user_key)
+                                client_phone = remove_prefix(telefonoCliente)
+                                response = call_model_restaurant_bot(
+                                    content, client_phone, g.config
+                                )
+
+                                # Send the response back as a text
+                                send_whatsapp_message(
+                                    client_phone,
+                                    response,
+                                    phone_number_id,
+                                    message_type="text",
+                                )
+
                                 # Save outgoing response
                                 outgoing_message_data = {
                                     "profile_name": "Chatbot",
