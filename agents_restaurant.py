@@ -404,8 +404,8 @@ Si se te indica ID de la reservación quiere decir que ya está en el sistema po
 
 RECUERDA:  
 - Mantén la conversación ligera y profesional, de manera concisa y breve. No más de 3 oraciones.
-- El usuario no debe enterarse que la información fue enviada a la base de datos. Solo debe saber la información referente a su reservación.
-- Cuando la reservación haya sido hecha correctamente, agradece al usuario y coméntale que éste es un demo y si es el dueño del restaurante puede ver su reservación aquí: https://shorturl.at/i5Sd2.
+- El usuario no debe enterarse que la información fue enviada a la base de datos. Solo debe saber la información referente a su reservación y coméntale que éste es un demo y que puede ver su reservación aquí: https://shorturl.at/i5Sd2..
+- Cuando la reservación haya sido hecha correctamente, agradece al usuario y coméntale que éste es un demo y que puede ver su reservación aquí: https://shorturl.at/i5Sd2.
 """
 
 info_extraction_prompt = f"""
