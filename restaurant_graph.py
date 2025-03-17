@@ -421,3 +421,22 @@ def call_model_from_messenger(messages, config):
             ].content  # Get the content of the last message
 
     return response  # Return the final response content
+
+
+# Add on March 14, 2025
+def call_model_as_ai(phone, config, message_content):
+    """Call the graph as the AI agent initiating the conversation"""
+    ai_message = AIMessage(content=message_content)
+
+    events = react_graph.stream(
+        {"messages": [ai_message], "phone": phone},
+        config,
+        stream_mode="values",
+    )
+
+    # Return any potential responses (though there shouldn't be any)
+    response = None
+    for event in events:
+        if "messages" in event and event["messages"]:
+            response = event["messages"][-1].content
+    return response

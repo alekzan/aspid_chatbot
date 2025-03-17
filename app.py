@@ -14,10 +14,18 @@ from logging.handlers import RotatingFileHandler
 from chatbot_graph import call_model
 
 # Existing import for your LLM logic
-from restaurant_graph import call_model_restaurant_bot, call_model_from_messenger
+from restaurant_graph import (
+    call_model_restaurant_bot,
+    call_model_as_ai,
+    call_model_from_messenger,
+)
 
 # NEW: Import the transcription function
 from utilities_whatsapp import transcribe_audio_from_whatsapp
+
+# March 14th, 2025
+from celery import Celery
+
 
 # Ensure the database directory exists
 os.makedirs("data", exist_ok=True)
@@ -72,6 +80,7 @@ VERSION = os.getenv("VERSION")
 WHATSAPP_TOKEN = os.getenv("WHATSAPP_TOKEN")
 RECIPIENT_WAID = os.getenv("RECIPIENT_WAID")
 PHONE_NUMBER_ID = os.getenv("PHONE_NUMBER_ID")
+PHONE_NUMBER_ID_2 = os.getenv("PHONE_NUMBER_ID_2")
 
 # Messenger & Instagram credentials
 PAGE_ACCESS_TOKEN = os.getenv("PAGE_ACCESS_TOKEN")
@@ -102,6 +111,91 @@ def get_config(user_key):
         return reset_thread_id(user_key)
     else:
         return {"configurable": {"thread_id": thread_id_number.decode()}}
+
+
+# Configure Celery after Redis client setup
+def make_celery(app):
+    celery = Celery(
+        app.import_name,
+        broker=app.config["CELERY_BROKER_URL"],
+        backend=app.config["CELERY_RESULT_BACKEND"],
+        include=["app"],  # Explicitly tell Celery where to find tasks
+    )
+    celery.conf.update(
+        task_serializer="pickle",
+        accept_content=["pickle"],
+        result_serializer="pickle",
+        timezone="America/Mexico_City",
+        enable_utc=True,
+    )
+
+    class ContextTask(celery.Task):
+        def __call__(self, *args, **kwargs):
+            with app.app_context():
+                return self.run(*args, **kwargs)
+
+    celery.Task = ContextTask
+    return celery
+
+
+# Build Redis URL based on environment
+redis_url = f"redis://{REDIS_HOST}:{REDIS_PORT}/0"
+if REDIS_PASSWORD:
+    redis_url = f"redis://:{REDIS_PASSWORD}@{REDIS_HOST}:{REDIS_PORT}/0"
+
+# Configure Flask app
+app.config.update(CELERY_BROKER_URL=redis_url, CELERY_RESULT_BACKEND=redis_url)
+
+# Initialize Celery after app is fully configured
+celery = make_celery(app)
+
+
+# Add to app.py
+@celery.task(name="app.send_scheduled_review_prompt")  # Add explicit name
+def send_scheduled_review_prompt(recipient_phone, phone_number_id):
+    scheduled_message = (
+        "Este es un ejemplo de cómo AutoFlujo ayuda a los restaurantes a obtener más reseñas en Google Maps 📍.\n\n"
+        "📢 Así es como tu cliente recibiría este mensaje después de su visita:\n\n"
+        '"¡Hola! Esperamos que hayas disfrutado tu visita a La Cuchara Mágica. Si te gustó la experiencia, ¿nos dejas una reseña de 5 estrellas? '
+        'Solo toma un minuto y nos ayuda mucho. ⭐⭐⭐⭐⭐ Visita este link"\n\n'
+        "Con AutoFlujo, este proceso es automático, ayudándote a mejorar tu reputación sin esfuerzo. 🚀\n\n"
+        "¿Te gustaría implementarlo en tu restaurante? Mándame mensaje aquí: https://bit.ly/4bza3FS"
+    )
+
+    try:
+        # Get or create config for this user
+        user_key = f"whatsapp_conversation_{recipient_phone}"
+        config = get_config(user_key)
+
+        # Call the graph as the AI
+        call_model_as_ai(recipient_phone, config, scheduled_message)
+
+        # Send the actual WhatsApp message
+        send_whatsapp_message(
+            recipient=recipient_phone,
+            message=scheduled_message,
+            phone_number_id=phone_number_id,
+            message_type="text",
+        )
+
+        # Save to database
+        outgoing_message_data = {
+            "profile_name": "Chatbot",
+            "type": "text",
+            "content": scheduled_message,
+            "media_id": None,
+            "mime_type": None,
+            "sha256": None,
+        }
+        save_message_to_db(
+            phone_number_id,
+            recipient_phone,
+            outgoing_message_data,
+            "chatbot",
+        )
+
+    except Exception as e:
+        logger.error(f"Failed to send scheduled message: {str(e)}")
 
 
 @app.before_request
@@ -367,11 +461,27 @@ def webhook():
                                     outgoing_message_data,
                                     "chatbot",
                                 )
-                            elif phone_number_id == "289382677601457":
+                            elif (
+                                phone_number_id == PHONE_NUMBER_ID_2
+                            ):  # production: "289382677601457":
                                 # Process the text with call_model
                                 user_key = f"whatsapp_conversation_{telefonoCliente}"
                                 g.config = get_config(user_key)
                                 client_phone = remove_prefix(telefonoCliente)
+
+                                # Check if this is first interaction
+                                first_msg_key = f"first_interaction_{client_phone}"
+                                if not redis_client.exists(first_msg_key):
+                                    # Schedule the message and set lock
+                                    redis_client.set(
+                                        first_msg_key, "scheduled", ex=86400
+                                    )  # 24h expiration
+                                    send_scheduled_review_prompt.apply_async(
+                                        args=[client_phone, phone_number_id],
+                                        countdown=1800,  # 30 minutes
+                                        queue="default",  # Add explicit queue name
+                                    )
+                                # Call the model
                                 response = call_model_restaurant_bot(
                                     content, client_phone, g.config
                                 )

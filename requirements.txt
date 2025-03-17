@@ -18,3 +18,4 @@ langchain_pinecone
 pinecone-client
 pinecone
 pyairtable
+celery

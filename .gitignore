@@ -12,6 +12,7 @@ __pycache__/
 
 # Ignore everything inside the graphs folder but keep the folder itself
 data/graphs/*
+data/graphs_restaurant/*
 !data/graphs/.gitkeep
 
 # Ignore the specific database file
